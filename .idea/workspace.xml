@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ceb50da5-4755-42f7-b925-cb3a88531d7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SearchFunction.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss.py" afterDir="false" />
+    <list default="true" id="ceb50da5-4755-42f7-b925-cb3a88531d7a" name="Default Changelist" comment="Search function and saving titles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Movies.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Movies.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -210,7 +207,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571327779010</updated>
-      <workItem from="1571327780248" duration="17202000" />
+      <workItem from="1571327780248" duration="17777000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit">
       <created>1571329892915</created>
@@ -219,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571329892915</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Search function and saving titles">
+      <created>1571423734346</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1571423734346</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,9 +242,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init Commit" />
+    <MESSAGE value="Search function and saving titles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Search function and saving titles" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/BDA_Term_Project$ss.coverage" NAME="ss Coverage Results" MODIFIED="1571421070553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/BDA_Term_Project$ss.coverage" NAME="ss Coverage Results" MODIFIED="1571424171983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
