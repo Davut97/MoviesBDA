@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ceb50da5-4755-42f7-b925-cb3a88531d7a" name="Default Changelist" comment="Search function and saving titles">
+    <list default="true" id="ceb50da5-4755-42f7-b925-cb3a88531d7a" name="Default Changelist" comment="T">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss.py" beforeDir="false" afterPath="$PROJECT_DIR$/ss.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1571327779010</updated>
       <workItem from="1571327780248" duration="27409000" />
-      <workItem from="1571473695347" duration="3619000" />
+      <workItem from="1571473695347" duration="4551000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit">
       <created>1571329892915</created>
@@ -112,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571427705978</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Search function and saving titles">
+      <created>1571477561962</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1571477561963</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
