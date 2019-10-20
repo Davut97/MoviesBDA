@@ -1,13 +1,13 @@
 import requests
 import json
 from string import Template
-
+import csv
 
 def get_movies_id():
     pages = 1
     url = 'https://api.themoviedb.org/3/discover/movie?api_key=9902b134582ad4ddad59aa7e54a5164f&sort_by=revenue.desc&certification_country=US&page=$pages'
     urlTemplate = Template(url)
-    arrID = []  # initiliaz the IDs array
+    arrID = []  # initilias the IDs array
     while (pages <= 200):
         url2 = urlTemplate.substitute(pages=pages)
         response = requests.get(url2)
@@ -18,6 +18,7 @@ def get_movies_id():
 
     print(len(arrID))
     return arrID
+
 
 # write into the csv file
 def write_array_to_csv(file_name, data):
