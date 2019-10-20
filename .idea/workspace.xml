@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ceb50da5-4755-42f7-b925-cb3a88531d7a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/MoviesBDA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/BDA Term Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BDA Term Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WriteIntoCSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/WriteIntoCSV.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss.py" beforeDir="false" afterPath="$PROJECT_DIR$/GenerateRandomMovies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenerateRandomMovies.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Movies.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchFunction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WriteIntoCSV.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +35,7 @@
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -85,6 +90,7 @@
       <updated>1571327779010</updated>
       <workItem from="1571327780248" duration="27409000" />
       <workItem from="1571473695347" duration="12139000" />
+      <workItem from="1571565324695" duration="950000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit">
       <created>1571329892915</created>

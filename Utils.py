@@ -1,21 +1,51 @@
+import requests
+import json
+from string import Template
+
+
+def get_movies_id():
+    pages = 1
+    url = 'https://api.themoviedb.org/3/discover/movie?api_key=9902b134582ad4ddad59aa7e54a5164f&sort_by=revenue.desc&certification_country=US&page=$pages'
+    urlTemplate = Template(url)
+    arrID = []  # initiliaz the IDs array
+    while (pages <= 200):
+        url2 = urlTemplate.substitute(pages=pages)
+        response = requests.get(url2)
+        data = json.loads(response.text)
+        arrID += extract_element_from_json(data, ['results', 'id'])  # array of titles
+        print("fininsd page: " + str(pages))
+        pages = pages + 1
+
+    print(len(arrID))
+    return arrID
+
+# write into the csv file
+def write_array_to_csv(file_name, data):
+    with open(file_name, 'w', newline='', encoding='utf-8') as csvfile:
+        writer = csv.writer(csvfile)
+        for row in data:
+            writer.writerow(row)
+
+
 def extract_element_from_json(obj, path):
-    '''
+    """
     Extracts an element from a nested dictionary or
     a list of nested dictionaries along a specified path.
     If the input is a dictionary, a list is returned.
     If the input is a list of dictionary, a list of lists is returned.
     obj - list or dict - input dictionary or list of dictionaries
     path - list - list of strings that form the path to the desired element
-    '''
+    """
+
     def extract(obj, path, ind, arr):
-        '''
+        """
             Extracts an element from a nested dictionary
             along a specified path and returns a list.
             obj - dict - input dictionary
             path - list - list of strings that form the JSON path
             ind - int - starting index
             arr - list - output list
-        '''
+        """
         key = path[ind]
         if ind + 1 < len(path):
             if isinstance(obj, dict):
@@ -43,6 +73,7 @@ def extract_element_from_json(obj, path):
             else:
                 arr.append(None)
         return arr
+
     if isinstance(obj, dict):
         return extract(obj, path, 0, [])
     elif isinstance(obj, list):
