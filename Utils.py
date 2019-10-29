@@ -8,7 +8,7 @@ def get_movies_id():
     url = 'https://api.themoviedb.org/3/discover/movie?api_key=9902b134582ad4ddad59aa7e54a5164f&sort_by=revenue.desc&certification_country=US&page=$pages'
     urlTemplate = Template(url)
     arrID = []  # initilias the IDs array
-    while (pages <= 200):
+    while (pages <= 500):
         url2 = urlTemplate.substitute(pages=pages)
         response = requests.get(url2)
         data = json.loads(response.text)

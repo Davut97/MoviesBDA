@@ -17,7 +17,7 @@ urlDiscoveries = Template('https://api.themoviedb.org/3/movie/$id?api_key=9902b1
 def create_movie_file():
     # Check if the file exists first, if not get the ids and create it
     if not os.path.exists("Movies.csv"):
-        csvData = [["Title", "Budget", "Revenue"]]
+        csvData = [["Title", "Budget", "Revenue","Date","Runtime"]]
         arrID2 = get_movies_id()
         for i in arrID2:
             id = i
@@ -39,7 +39,15 @@ def create_movie_file():
                 revenue = data2['revenue']
             except:
                 revenue = [""]
-            csvData.append([title, budget, revenue])
+            try:
+                Date = data2["release_date"]
+            except:
+                Date = [""]
+            try:
+                runtime=data2["runtime"]
+            except:
+                runtime=[""]
+            csvData.append([title, budget, revenue,Date,runtime])
 
         write_array_to_csv('Movies.csv', csvData)
         return len(csvData)
@@ -60,7 +68,7 @@ def fill_with_data(file_path):
         print(FileNotFoundError)
         return -1
 
-    new_columns = ['Year', 'Rated', 'Released', 'Runtime', 'Genre', 'Director', 'Writer', 'Actors', 'Language',
+    new_columns = ['Year', 'Rated', 'Genre', 'Director', 'Writer', 'Actors', 'Language',
                    'Country', 'Awards', 'Metascore', 'imdbRating', 'imdbVotes', 'Production']
     Movies_Data = Movies_Data.reindex(columns=Movies_Data.columns.tolist())
     counter = 0
@@ -99,5 +107,6 @@ def fill_with_data(file_path):
 
 
 create_movie_file()
-filePath = "C:/Users/bshar/Downloads/Uni stuff/Fourth Year/First Semester/Big Data Analyses/Term Project/Movies.csv"
+filePath = "C:/Users/owes4/Desktop/Thıs Wıll Work/Movies.csv"
 print(fill_with_data(filePath))
+
