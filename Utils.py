@@ -1,14 +1,18 @@
+# -*- coding: utf-8 -*-
 import requests
 import json
 from string import Template
 import csv
 
+# gets a random list of movies
+# and save each movie id in an array
+# then it returns the array
 def get_movies_id():
     pages = 1
     url = 'https://api.themoviedb.org/3/discover/movie?api_key=9902b134582ad4ddad59aa7e54a5164f&sort_by=revenue.desc&certification_country=US&page=$pages'
     urlTemplate = Template(url)
     arrID = []  # initilias the IDs array
-    while (pages <= 500):
+    while (pages <= 10):
         url2 = urlTemplate.substitute(pages=pages)
         response = requests.get(url2)
         data = json.loads(response.text)
@@ -28,6 +32,7 @@ def write_array_to_csv(file_name, data):
             writer.writerow(row)
 
 
+# Source: https://bcmullins.github.io/parsing-json-python/
 def extract_element_from_json(obj, path):
     """
     Extracts an element from a nested dictionary or
@@ -82,3 +87,12 @@ def extract_element_from_json(obj, path):
         for item in obj:
             outer_arr.append(extract(item, path, 0, []))
         return outer_arr
+
+# checks if the string in english or not
+def isEnglish(s):
+    try:
+        s.encode(encoding='utf-8').decode('ascii')
+    except UnicodeDecodeError:
+        return False
+    else:
+        return True

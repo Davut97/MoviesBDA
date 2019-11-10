@@ -1,10 +1,11 @@
+# -*- coding: utf-8 -*-
 from string import Template
 from requests import get
 import json
 import os.path
 import pandas as pd
 
-from Utils import get_movies_id, write_array_to_csv, extract_element_from_json
+from Utils import get_movies_id, write_array_to_csv, extract_element_from_json, isEnglish
 
 omdb_url = Template('http://www.omdbapi.com/?apikey=13750151&t=$title')
 urlDiscoveries = Template('https://api.themoviedb.org/3/movie/$id?api_key=9902b134582ad4ddad59aa7e54a5164f')
@@ -26,6 +27,8 @@ def create_movie_file():
             response = get(urlDiscoveries2)
             data2 = json.loads(response.text)
 
+            if not isEnglish(data2['original_title']):
+                continue
             try:
                 title = data2['original_title']
                 print(data2['original_title'])
