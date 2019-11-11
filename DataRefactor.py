@@ -8,7 +8,7 @@ import numpy as np
 # <para>/para>
 # <return></return>
 def fix_RU_Y_RA_P():
-    data = pd.read_csv("C:/Users/owes4/Desktop/Thıs Wıll Work/Unnormlızed Movies test.csv",keep_default_na=False)
+    data = pd.read_csv("C:/Users/owes4/Desktop/Thıs Wıll Work/Raw Movies.csv",keep_default_na=False)
     # The API Returns this values instead of Unrated for non MPA Ratings
     # So we will replace them with unrated
     TRASH = ["PASSED", "Not Rated", "Unrated", "Approved", "N/A"]
@@ -19,15 +19,17 @@ def fix_RU_Y_RA_P():
             data.at[it.Index, "Runtime"] = "108"  # The mean of runtime
         if (not it.Genre) or it.Genre == "N/A":
             data.drop(it.Index, inplace=True)
-
-    data["Runtime"].astype(int)
-    data["Production"] = data["Production"].fillna("Others")
+        if it.Production == "":
+            data.at[it.Index,"Production"] = "Others"
     data["Rated"] = data["Rated"].fillna("Unrated")
     del data["Year"]
     data['Year of Release'] = pd.DatetimeIndex(data['Date']).year
     del data["Date"]
     print(data.isnull().sum())
-    data.to_csv("C:/Users/owes4/Desktop/Thıs Wıll Work/Movies.csv", index=False)
+    data.to_csv("C:/Users/owes4/Desktop/Thıs Wıll Work/Filtered Movies.csv", index=False)
+    data = pd.read_csv("C:/Users/owes4/Desktop/Thıs Wıll Work/Filtered Movies.csv")
+    data["Production"] = data["Production"].fillna("Others")
+    data.to_csv("C:/Users/owes4/Desktop/Thıs Wıll Work/Filtered Movies.csv", index=False)
 
 
 # endregion
@@ -38,8 +40,9 @@ def fix_RU_Y_RA_P():
 # <para>/para>
 # <return></return>
 def fix_Columns():
-    Movies_Data = pd.read_csv("C:/Users/owes4/Desktop/Thıs Wıll Work/Movies.csv", keep_default_na=False)
     fix_RU_Y_RA_P()
+    Movies_Data = pd.read_csv("C:/Users/owes4/Desktop/Thıs Wıll Work/Filtered Movies.csv", keep_default_na=False)
+
     # Top 100 actors according to IMDB
     actorsList = ["Robert De Niro", "Jack Nicholson", "Marlon Brando", "Denzel Washington", "Clark Gable", "Tom Hanks",
                   "Humphrey Bogart", "Daniel Day-Lewis", "Sidney Poitier", "Gregory Peck", "Leonardo DiCaprio",
@@ -95,7 +98,7 @@ def fix_Columns():
         except:
             print("An error was encountered :(")
     Movies_Data["imdbRating"] = Movies_Data["imdbRating"].astype(float)
-    Movies_Data["Metascore"] = Movies_Data["Metascore"].astype(int)
+    Movies_Data["Metascore"] = Movies_Data["Metascore"].astype(float)
     Movies_Data["imdbVotes"] = Movies_Data["imdbVotes"].astype(int)
     Movies_Data["Actors"] = Movies_Data["Actors"].astype(int)
     print(Movies_Data["Actors"].isnull().sum())
@@ -109,20 +112,20 @@ def fix_Columns():
     print(Movies_Data["Actors"].max())
 
     print(Movies_Data.isnull().sum())
-    Movies_Data.to_csv("C:/Users/owes4/Desktop/Thıs Wıll Work/Movies.csv", index=False)
+    Movies_Data.to_csv("C:/Users/owes4/Desktop/Thıs Wıll Work/Filtered Movies.csv", index=False)
 
 
 # endregion
 
 def replace_Metascore_With_Mean():
-    Movies_Data = pd.read_csv("C:/Users/owes4/Desktop/Thıs Wıll Work/Movies.csv")
+    Movies_Data = pd.read_csv("C:/Users/owes4/Desktop/Thıs Wıll Work/Filtered Movies.csv")
     Movies_Data['Metascore'].replace(0, np.NaN)
     metaMean = round(Movies_Data["Metascore"].mean())
     print(metaMean)
     for it in Movies_Data.itertuples():
         if math.isnan(it.Metascore) or it.Metascore == '':
             Movies_Data.at[it.Index, "Metascore"] = metaMean
-    Movies_Data.to_csv("Movies.csv", index=False)
+    Movies_Data.to_csv("C:/Users/owes4/Desktop/Thıs Wıll Work/Filtered Movies", index=False)
 
 
 fix_Columns()

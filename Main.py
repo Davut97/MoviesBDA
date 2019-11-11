@@ -26,8 +26,10 @@ def create_movie_file():
             urlDiscoveries2 = urlDiscoveries.substitute(id=id)
             response = get(urlDiscoveries2)
             data2 = json.loads(response.text)
-
-            if not isEnglish(data2['original_title']):
+            try:
+                if not isEnglish(data2['original_title']):
+                    continue
+            except:
                 continue
             try:
                 title = data2['original_title']
@@ -110,6 +112,6 @@ def fill_with_data(file_path):
 
 
 create_movie_file()
-filePath = "C:/Users/owes4/Desktop/Thıs Wıll Work/Movies.csv"
+filePath = "C:/Users/owes4/Desktop/Thıs Wıll Work/Raw Movies.csv"
 print(fill_with_data(filePath))
 
