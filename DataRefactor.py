@@ -12,7 +12,7 @@ def fix_RU_Y_RA():
     data = pd.read_csv("C:/Users/owes4/Desktop/Thıs Wıll Work/Filtered Movies.csv",keep_default_na=False)
     # The API Returns this values instead of Unrated for non MPA Ratings
     # So we will replace them with unrated
-    TRASH = ["PASSED", "Not Rated", "Unrated", "Approved", "N/A"]
+    TRASH = ["PASSED", "Not Rated", "Unrated", "Approved", "N/A",""]
     for it in data.itertuples():
         if it.Rated in TRASH:
             data.at[it.Index, "Rated"] = "Unrated"
