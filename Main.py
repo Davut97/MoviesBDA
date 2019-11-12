@@ -17,7 +17,7 @@ urlDiscoveries = Template('https://api.themoviedb.org/3/movie/$id?api_key=9902b1
 # <return> # of data rows created. Returns 0 if file exist</return>
 def create_movie_file():
     # Check if the file exists first, if not get the ids and create it
-    if not os.path.exists("Movies.csv"):
+    if not os.path.exists("Raw Movies.csv"):
         csvData = [["Title", "Budget", "Revenue","Date","Runtime"]]
         arrID2 = get_movies_id()
         for i in arrID2:
@@ -54,7 +54,7 @@ def create_movie_file():
                 runtime=[""]
             csvData.append([title, budget, revenue,Date,runtime])
 
-        write_array_to_csv('Movies.csv', csvData)
+        write_array_to_csv('Raw Movies.csv', csvData)
         return len(csvData)
     return 0
 
@@ -112,6 +112,6 @@ def fill_with_data(file_path):
 
 
 create_movie_file()
-filePath = "C:/Users/owes4/Desktop/Thıs Wıll Work/Raw Movies.csv"
+filePath = "Raw Movies.csv"
 print(fill_with_data(filePath))
 
