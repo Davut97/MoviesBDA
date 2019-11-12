@@ -7,8 +7,9 @@ import numpy as np
 # <summery> Fix RU Y RA P Columns </summery>
 # <para>/para>
 # <return></return>
-def fix_RU_Y_RA_P():
-    data = pd.read_csv("C:/Users/owes4/Desktop/Thıs Wıll Work/Raw Movies.csv",keep_default_na=False)
+def fix_RU_Y_RA():
+    fix_Production()
+    data = pd.read_csv("C:/Users/owes4/Desktop/Thıs Wıll Work/Filtered Movies.csv",keep_default_na=False)
     # The API Returns this values instead of Unrated for non MPA Ratings
     # So we will replace them with unrated
     TRASH = ["PASSED", "Not Rated", "Unrated", "Approved", "N/A"]
@@ -27,20 +28,22 @@ def fix_RU_Y_RA_P():
     del data["Date"]
     print(data.isnull().sum())
     data.to_csv("C:/Users/owes4/Desktop/Thıs Wıll Work/Filtered Movies.csv", index=False)
-    data = pd.read_csv("C:/Users/owes4/Desktop/Thıs Wıll Work/Filtered Movies.csv")
-    data["Production"] = data["Production"].fillna("Others")
-    data.to_csv("C:/Users/owes4/Desktop/Thıs Wıll Work/Filtered Movies.csv", index=False)
+
 
 
 # endregion
 
+def fix_Production():                       #fix Production column only
+    data = pd.read_csv("C:/Users/owes4/Desktop/Thıs Wıll Work/Raw Movies.csv")
+    data["Production"] = data["Production"].fillna("Others")
+    data.to_csv("C:/Users/owes4/Desktop/Thıs Wıll Work/Filtered Movies.csv", index=False)
 # region Fix All problems in Columns: fix_Columns()
 # Author: Ahmad Nawar Droubi
 # <summery> Fix All Encountered Problems in the columns </summery>
 # <para>/para>
 # <return></return>
 def fix_Columns():
-    fix_RU_Y_RA_P()
+    fix_RU_Y_RA()
     Movies_Data = pd.read_csv("C:/Users/owes4/Desktop/Thıs Wıll Work/Filtered Movies.csv", keep_default_na=False)
 
     # Top 100 actors according to IMDB

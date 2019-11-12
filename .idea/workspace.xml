@@ -4,10 +4,7 @@
     <list default="true" id="ceb50da5-4755-42f7-b925-cb3a88531d7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataRefactor.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataRefactor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Movies.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unnormlızed Movies.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Filtered Movies.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Filtered Movies.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -120,6 +117,7 @@
       <workItem from="1573397372138" duration="5663000" />
       <workItem from="1573476944542" duration="5638000" />
       <workItem from="1573507842361" duration="248000" />
+      <workItem from="1573556259360" duration="397000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit">
       <created>1571329892915</created>
