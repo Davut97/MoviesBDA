@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ceb50da5-4755-42f7-b925-cb3a88531d7a" name="Default Changelist" comment="" />
+    <list default="true" id="ceb50da5-4755-42f7-b925-cb3a88531d7a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Actors vs IMBDRating.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Revenue difference between famous companies and others.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Revenue inside and outside usa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Statistic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/BDA Term Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BDA Term Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Actors vs Revenue.png" beforeDir="false" afterPath="$PROJECT_DIR$/Actors vs Revenue.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Correlation Heat Diagram.png" beforeDir="false" afterPath="$PROJECT_DIR$/Correlation Heat Diagram.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Count of Top 100 Actors.png" beforeDir="false" afterPath="$PROJECT_DIR$/Count of Top 100 Actors.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Filtered Movies.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Filtered Movies.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ratings Counts.png" beforeDir="false" afterPath="$PROJECT_DIR$/Ratings Counts.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Statistical Analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/Statistical Analysis.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +62,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\owes4\MoviesBDA" />
       <recent name="C:\Users\owes4\Desktop\Thıs Wıll Work" />
     </key>
   </component>
@@ -145,6 +160,7 @@
       <workItem from="1574259042202" duration="134000" />
       <workItem from="1574681030479" duration="1037000" />
       <workItem from="1574701120456" duration="22631000" />
+      <workItem from="1575046610592" duration="2651000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit">
       <created>1571329892915</created>
