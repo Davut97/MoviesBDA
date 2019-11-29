@@ -1,0 +1,60 @@
+OPTIONAL!!!!! (AHMAD)
+Check this: https://www.kaggle.com/theacademy/academy-awards and get the information on awards, and fill this data into the dataset!! (DONE)
+
+
+
+For Budget get the mean, max, and min. Draw plot diagram to show distribuation.(AYDIN)
+For Revenue get the mean, max, and min. Draw plot diagram to show distribuation.(AYDIN)
+For Runtime get the mean, max, and min. Draw plot diagram to show distribuation.(AYDIN)
+
+For Rating, use label encoding, and then see unique values, and draw a diagram to show (maybe pie?) (AHMAD) (DONE)
+For Genre, use Label Encoding, and then see unique values, and draw a diagram to show (maybe pie?)(AHMAD) (DONE)
+For Actors, find mean, max, and min. Draw a plot diagram. (AHMAD) (DONE)
+
+For Country, use Label-encoding, and then draw diagram.(AYDIN)
+Meta Score, find mean, max, and min (remeber to ignor zero).(AYDIN)
+Imdb rating, find mean, max, and min.(AYDIN)
+
+imdb Vote, find mean. (AHMAD) (DONE)
+For Prodcuction Company: Which production company had the most movies released.(AHMAD) (DONE) (Other is the mode)
+Draw a diagram for releation between prodcution and revenue. (AHMAD)
+
+Hypothesis:
+1)(AHMAD) (FAILS)
+H0: The Higher the number of famous actors in a movie, the lower the revenue is.
+H1: The higher the number of famous actors in a movie, the higher the revenue is.
+
+2)(AYDIN)
+H0: The budget of a movie doesn't effect the number of famous actors in it.
+H1: The budget of a movie does effect the number of actors in it
+(Draw a digaram to show the releationship in addition)
+
+3)(AHMAD) (PASSES)
+H0: If a movie's genre is Action, it has a lower average revenue, than if it was of another genre.
+H1: If a movie's genre is Action, it has a higher average revenue, than if it was of another genre.
+
+4)(AYDIN)
+H0: If a movie is released outside of US, it's revenue will be lower than revenue average.
+H1: If a movie is released outside US, it's revenue will be higher than revenue average.
+
+5)(AHMAD) (PASSES)
+H0: The Higher the budget of a movie the Lower the revenue is.
+H1: The Higher the budget of a movei the Higher the revenue is.
+
+6)(AYDIN)
+H0: The Higher number of famous actors in a movie, the Lower it's rating is.
+H1: The Higher the number of famous actors in a movie, the Higher it's rating is.
+
+7)(AHMAD) (Fails)
+H0: The Higher the imdb votes for a movie, the higher its rating is.
+H1: The Higher the imdb votes for a movie, the lower its rating is.
+
+8)(AYDIN) 
+H0: If a movie is produced by (find the production company with the most movies), then it will have higher than average revenue
+H1: If a movie is produced by (find the production company with the most movies), then it will have lower than average revenue
+
+9)(AHMAD) (FAILS) (BADLY)
+H0: If a movie has more than 1 award, it has a lower revenue.
+H1: If a movie has more than 1 award, it will have a higher revenue.
+
+Draw one big corrlation diagram, and some small diagrams for the preveious hypothesis. (AYDIN)

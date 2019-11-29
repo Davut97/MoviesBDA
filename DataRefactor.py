@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
-import pandas as pd
 import math
+
 import numpy as np
+import pandas as pd
+
 
 #fix Production column only
 def fix_Production():
@@ -73,9 +75,11 @@ def fix_Columns():
                   "Nicolas Cage", "Joe Pesci", "Brad Pitt", "Kevin Costner", "Donald Sutherland", "Clint Eastwood",
                   "Keanu Reeves", "Jeff Goldblum"]
     actorsCounter = 0
-
+    Movies_Data['Genre'] = Movies_Data['Genre'].astype(str)
     for it in Movies_Data.itertuples():
         try:
+            genres = it.Genre.split(', ')
+            Movies_Data.at[it.Index, "Genre"] = genres[0]
             if it.imdbRating == '' or it.imdbRating == 'N/A':
                 Movies_Data.at[it.Index, "imdbRating"] = '0'
             # removes ',' from votes. Run this once!!
@@ -122,6 +126,7 @@ def fix_Columns():
 
 
 # endregion
+
 
 def replace_Metascore_With_Mean():
     Movies_Data = pd.read_csv("Filtered Movies.csv")
