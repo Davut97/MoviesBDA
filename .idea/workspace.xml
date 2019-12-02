@@ -1,19 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ceb50da5-4755-42f7-b925-cb3a88531d7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Actors vs IMBDRating.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Revenue difference between famous companies and others.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Revenue inside and outside usa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Statistic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/BDA Term Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BDA Term Project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="ceb50da5-4755-42f7-b925-cb3a88531d7a" name="Default Changelist" comment="Finished Part II">
+      <change afterPath="$PROJECT_DIR$/Figures/Actors vs IMBDRating.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Figures/Actors vs Revenue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Figures/Correlation Heat Diagram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Figures/Count of Actors.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Figures/Count of Top 100 Actors.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Figures/Number of Awards for a Movie vs Revenue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Figures/Number of Awards for movies vs Revenue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Figures/Ratings Counts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Figures/Revenue difference between famous companies and others.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Figures/Revenue inside and outside usa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieBDAReport Latex.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieBDAreport PDF.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Actors vs Revenue.png" beforeDir="false" afterPath="$PROJECT_DIR$/Actors vs Revenue.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Correlation Heat Diagram.png" beforeDir="false" afterPath="$PROJECT_DIR$/Correlation Heat Diagram.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Count of Top 100 Actors.png" beforeDir="false" afterPath="$PROJECT_DIR$/Count of Top 100 Actors.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Filtered Movies.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Filtered Movies.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ratings Counts.png" beforeDir="false" afterPath="$PROJECT_DIR$/Ratings Counts.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Actors vs IMBDRating.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Actors vs Revenue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Correlation Heat Diagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Count of Actors.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Count of Top 100 Actors.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataRefactor.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataRefactor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Number of Awards for a Movie vs Revenue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Number of Awards for movies vs Revenue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ratings Counts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Report on Movies Dataset.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Revenue difference between famous companies and others.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Revenue inside and outside usa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Statistic.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Statistical Analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/Statistical Analysis.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -160,7 +174,9 @@
       <workItem from="1574259042202" duration="134000" />
       <workItem from="1574681030479" duration="1037000" />
       <workItem from="1574701120456" duration="22631000" />
-      <workItem from="1575046610592" duration="2651000" />
+      <workItem from="1575046610592" duration="2935000" />
+      <workItem from="1575134289372" duration="599000" />
+      <workItem from="1575296722171" duration="1896000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit">
       <created>1571329892915</created>
@@ -246,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575045840800</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Finished statistical analysis for all features">
+      <created>1575049529720</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1575049529720</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,9 +299,21 @@
     <MESSAGE value="Refactoring the production colmun" />
     <MESSAGE value="Part 1 Finished" />
     <MESSAGE value="Added Some Statistical Analysis for Part of Features" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Some Statistical Analysis for Part of Features" />
+    <MESSAGE value="Finished statistical analysis for all features" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished statistical analysis for all features" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Main.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/BDA_Term_Project$ss.coverage" NAME="ss Coverage Results" MODIFIED="1571932483755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

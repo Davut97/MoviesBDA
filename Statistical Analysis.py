@@ -13,7 +13,7 @@ dataCorrlation = data.corr()
 f, ax = plt.subplots(figsize=(9, 8))
 sns.heatmap(dataCorrlation, ax=ax, cmap="YlGnBu", linewidths=0.1)
 plt.title("Correlation Heat Diagram")
-plt.savefig("Correlation Heat Diagram.png")
+plt.savefig("Figures/Correlation Heat Diagram.png")
 plt.show()
 
 sns.countplot(data["Rated"], label="Rating")
@@ -27,7 +27,7 @@ sns.countplot(data["Actors"], label="Number of Top 100 Actors in Movie")
 plt.xlabel("Number of Top 100 Actors in Movie")
 plt.ylabel("Count")
 plt.title("Number of Top 100 Actors in Movie Count")
-plt.savefig("Count of Top 100 Actors.png")
+plt.savefig("Figures/Count of Top 100 Actors.png")
 plt.show()
 
 print("Mean of IMDB Votes: " + str(data["imdbVotes"].mean()))  # The mean is 79283.1397
@@ -81,7 +81,7 @@ print("****************************")  # Divider
 # No Relation from Bar plot.
 sns.barplot(x="Number of Awards", y="Revenue", data=data)
 plt.title("Number of Awards for a Movie vs Revenue")
-plt.savefig("Number of Awards for a Movie vs Revenue.png")
+plt.savefig("Figures/Number of Awards for a Movie vs Revenue.png")
 plt.show()
 # Let's check corr coefficient
 print("Correlation Coefficient of Number of Awards & Revenue")
@@ -124,7 +124,7 @@ plt.xlabel("Realeasd out or in USA")
 plt.ylabel("Revenue")
 plt.yscale("log")
 plt.title("Revenue inside and outside usa ")
-plt.savefig("Revenue inside and outside usa.png")
+plt.savefig("Figures/Revenue inside and outside usa.png")
 plt.show()
 
 a = sns.barplot(x="Actors", y="imdbRating", data=data)

@@ -123,7 +123,7 @@ def fix_Columns():
 
     print(Movies_Data.isnull().sum())
     Movies_Data.to_csv("Filtered Movies.csv", index=False)
-
+    fix_Country()
 
 # endregion
 
@@ -138,6 +138,20 @@ def replace_Metascore_With_Mean():
             Movies_Data.at[it.Index, "Metascore"] = metaMean
     Movies_Data.to_csv("Filtered Movies.csv", index=False)
 
+
+def fix_Country():
+    data = pd.read_csv("Filtered Movies.csv", keep_default_na=False)
+    Country = "USA"
+    for it in data.itertuples():
+        CountryArr = it.Country.split(",")
+        if Country in CountryArr and len(CountryArr) > 1:
+            data.at[it.Index, "ReleasedOutsideUSA"] = 1
+        elif Country in CountryArr and len(CountryArr) == 1:
+            data.at[it.Index, "ReleasedOutsideUSA"] = 0
+        elif Country not in CountryArr:
+            data.at[it.Index, "ReleasedOutsideUSA"] = 1
+
+    data.to_csv("Filtered Movies.csv", index=False)
 
 fix_Columns()
 replace_Metascore_With_Mean()
