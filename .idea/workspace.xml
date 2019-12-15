@@ -2,33 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ceb50da5-4755-42f7-b925-cb3a88531d7a" name="Default Changelist" comment="Finished Part II">
-      <change afterPath="$PROJECT_DIR$/Figures/Actors vs IMBDRating.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Figures/Actors vs Revenue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Figures/Correlation Heat Diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Figures/Count of Actors.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Figures/Count of Top 100 Actors.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Figures/Number of Awards for a Movie vs Revenue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Figures/Number of Awards for movies vs Revenue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Figures/Ratings Counts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Figures/Revenue difference between famous companies and others.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Figures/Revenue inside and outside usa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MovieBDAReport Latex.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MovieBDAreport PDF.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Figures/Log_ROC.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MLmodel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Actors vs IMBDRating.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Actors vs Revenue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Correlation Heat Diagram.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Count of Actors.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Count of Top 100 Actors.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DataRefactor.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataRefactor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Number of Awards for a Movie vs Revenue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Number of Awards for movies vs Revenue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ratings Counts.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report on Movies Dataset.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Revenue difference between famous companies and others.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Revenue inside and outside usa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Statistic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Filtered Movies.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Filtered Movies.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Statistical Analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/Statistical Analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -177,6 +157,9 @@
       <workItem from="1575046610592" duration="2935000" />
       <workItem from="1575134289372" duration="599000" />
       <workItem from="1575296722171" duration="1896000" />
+      <workItem from="1576163321138" duration="5004000" />
+      <workItem from="1576362322705" duration="11000" />
+      <workItem from="1576422608103" duration="7511000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit">
       <created>1571329892915</created>

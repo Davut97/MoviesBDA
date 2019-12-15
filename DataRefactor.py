@@ -153,5 +153,18 @@ def fix_Country():
 
     data.to_csv("Filtered Movies.csv", index=False)
 
-fix_Columns()
-replace_Metascore_With_Mean()
+
+def clearall():
+    data = pd.read_csv("Filtered Movies.csv", keep_default_na=False)
+    data.columns = data.columns.str.rstrip()
+    for it in data.itertuples():
+        Language = it.Language.split(",")
+        Country = it.Country.split(',')
+        data.at[it.Index, "Language"] = Language[0]
+        data.at[it.Index, "Country"] = Country[0]
+    data.to_csv("Filtered Movies.csv", index=False)
+
+
+# fix_Columns()
+# replace_Metascore_With_Mean()
+clearall()
