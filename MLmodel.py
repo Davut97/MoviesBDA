@@ -3,7 +3,7 @@ import pandas as pd
 import statsmodels.api as sm
 from sklearn import metrics
 from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, cross_val_score
 
 from Utils import trim_all_columns
 
@@ -67,7 +67,7 @@ X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_
 logreg = LogisticRegression()
 logreg.fit(X_train, y_train)
 y_pred = logreg.predict(X_test)
-print("Accuarcy of logistic regression classifier on test set: {:.2f}".format(logreg.score(X_test, y_test)))
+print("Accuarcy of logistic regression classifier on test set: ", logreg.score(X_test, y_test) * 100)
 confusion_matrix = metrics.confusion_matrix(y_test, y_pred)
 print(confusion_matrix)
 print(metrics.classification_report(y_test, y_pred))
@@ -75,7 +75,7 @@ print(metrics.classification_report(y_test, y_pred))
 logit_roc_auc = metrics.roc_auc_score(y_test, logreg.predict(X_test))
 fpr, tpr, thresholds = metrics.roc_curve(y_test, logreg.predict_proba(X_test)[:, 1])
 plt.figure()
-plt.plot(fpr, tpr, label='Logistic Regression (area = %0.2f)' % logit_roc_auc)
+plt.plot(fpr, tpr, label='Logistic Regression (area = %0.4f)' % logit_roc_auc)
 plt.plot([0, 1], [0, 1], 'r--')
 plt.xlim([0.0, 1.0])
 plt.ylim([0.0, 1.05])
@@ -84,5 +84,8 @@ plt.ylabel('True Positive Rate')
 plt.title('Receiver operating characteristic')
 plt.legend(loc="lower right")
 plt.savefig('Figures/Log_ROC')
-plt.show()
+# plt.show()
+accuracy = cross_val_score(logreg, x, y, scoring="accuracy", cv=10)
+print(accuracy)
+print("Accuracy of the model with cross validation is: ", accuracy.mean() * 100)  # => 76.099
 # endregion

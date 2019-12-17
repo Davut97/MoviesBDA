@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ceb50da5-4755-42f7-b925-cb3a88531d7a" name="Default Changelist" comment="Finished Part II">
-      <change afterPath="$PROJECT_DIR$/Figures/Log_ROC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MLmodel.py" afterDir="false" />
+    <list default="true" id="ceb50da5-4755-42f7-b925-cb3a88531d7a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/IEEELatexTemplateForReport.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IEEELatexTemplateForReport.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Presentation.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/BDA Term Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BDA Term Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataRefactor.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataRefactor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Filtered Movies.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Filtered Movies.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Statistical Analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/Statistical Analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/Count of Actors.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/Log_ROC.png" beforeDir="false" afterPath="$PROJECT_DIR$/Figures/Log_ROC.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figures/Number of Awards for movies vs Revenue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MLmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/MLmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieBDAReport Latex.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieBDAreport PDF.pdf" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -160,6 +166,8 @@
       <workItem from="1576163321138" duration="5004000" />
       <workItem from="1576362322705" duration="11000" />
       <workItem from="1576422608103" duration="7511000" />
+      <workItem from="1576603802856" duration="1020000" />
+      <workItem from="1576616594655" duration="548000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit">
       <created>1571329892915</created>

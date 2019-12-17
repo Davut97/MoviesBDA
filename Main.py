@@ -169,4 +169,6 @@ def clear_rated_genre():
 
 # Just makes a sound to indicate the script has finished.
 # REMOVE BEFORE SUBMITTING
+data = pd.read_csv("Raw Movies.csv")
+print(data.head())
 print('\007')
